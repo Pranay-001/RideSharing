@@ -1,0 +1,3 @@
+<app-nav-bar></app-nav-bar>
+<app-navigation *ngIf="isLoggedIn" (change)="logout($event)"></app-navigation>
+<router-outlet (deactivate)="login($event)"></router-outlet>
